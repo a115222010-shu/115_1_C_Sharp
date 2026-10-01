@@ -30,6 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.translateLabel = new System.Windows.Forms.Label();
+            this.italianButton = new System.Windows.Forms.Button();
+            this.spanishButton = new System.Windows.Forms.Button();
+            this.germanButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -46,17 +49,53 @@
             // 
             this.translateLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.translateLabel.Font = new System.Drawing.Font("新細明體", 20F);
-            this.translateLabel.Location = new System.Drawing.Point(266, 158);
+            this.translateLabel.Location = new System.Drawing.Point(178, 158);
             this.translateLabel.Name = "translateLabel";
-            this.translateLabel.Size = new System.Drawing.Size(236, 85);
+            this.translateLabel.Size = new System.Drawing.Size(436, 85);
             this.translateLabel.TabIndex = 1;
             this.translateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // italianButton
+            // 
+            this.italianButton.Font = new System.Drawing.Font("新細明體", 12F);
+            this.italianButton.Location = new System.Drawing.Point(87, 317);
+            this.italianButton.Name = "italianButton";
+            this.italianButton.Size = new System.Drawing.Size(177, 82);
+            this.italianButton.TabIndex = 2;
+            this.italianButton.Text = "義大利";
+            this.italianButton.UseVisualStyleBackColor = true;
+            this.italianButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // spanishButton
+            // 
+            this.spanishButton.Font = new System.Drawing.Font("新細明體", 12F);
+            this.spanishButton.Location = new System.Drawing.Point(299, 317);
+            this.spanishButton.Name = "spanishButton";
+            this.spanishButton.Size = new System.Drawing.Size(177, 82);
+            this.spanishButton.TabIndex = 3;
+            this.spanishButton.Text = "西班牙";
+            this.spanishButton.UseVisualStyleBackColor = true;
+            this.spanishButton.Click += new System.EventHandler(this.spanishButton_Click);
+            // 
+            // germanButton
+            // 
+            this.germanButton.Font = new System.Drawing.Font("新細明體", 12F);
+            this.germanButton.Location = new System.Drawing.Point(515, 317);
+            this.germanButton.Name = "germanButton";
+            this.germanButton.Size = new System.Drawing.Size(177, 82);
+            this.germanButton.TabIndex = 4;
+            this.germanButton.Text = "德國";
+            this.germanButton.UseVisualStyleBackColor = true;
+            this.germanButton.Click += new System.EventHandler(this.germanButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.germanButton);
+            this.Controls.Add(this.spanishButton);
+            this.Controls.Add(this.italianButton);
             this.Controls.Add(this.translateLabel);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -69,6 +108,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label translateLabel;
+        private System.Windows.Forms.Button italianButton;
+        private System.Windows.Forms.Button spanishButton;
+        private System.Windows.Forms.Button germanButton;
     }
 }
 
