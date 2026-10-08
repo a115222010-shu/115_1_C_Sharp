@@ -16,5 +16,17 @@ namespace Tutorial2_5
         {
             InitializeComponent();
         }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            cardbackPictureBox.Visible = true;
+            cardfacePictureBox.Visible = false;
+        }
+
+        private void faceButton_Click(object sender, EventArgs e)
+        {
+            cardfacePictureBox.Visible = true;
+            cardbackPictureBox.Visible = false;
+        }
     }
 }

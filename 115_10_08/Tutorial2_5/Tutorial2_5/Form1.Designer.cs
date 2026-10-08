@@ -28,13 +28,80 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.cardbackPictureBox = new System.Windows.Forms.PictureBox();
+            this.cardfacePictureBox = new System.Windows.Forms.PictureBox();
+            this.backButton = new System.Windows.Forms.Button();
+            this.faceButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbackPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardfacePictureBox)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // cardbackPictureBox
+            // 
+            this.cardbackPictureBox.Image = global::Tutorial2_5.Properties.Resources.Backface_Blue;
+            this.cardbackPictureBox.Location = new System.Drawing.Point(287, 62);
+            this.cardbackPictureBox.Name = "cardbackPictureBox";
+            this.cardbackPictureBox.Size = new System.Drawing.Size(227, 316);
+            this.cardbackPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cardbackPictureBox.TabIndex = 0;
+            this.cardbackPictureBox.TabStop = false;
+            // 
+            // cardfacePictureBox
+            // 
+            this.cardfacePictureBox.Image = global::Tutorial2_5.Properties.Resources._7_Spades;
+            this.cardfacePictureBox.Location = new System.Drawing.Point(287, 62);
+            this.cardfacePictureBox.Name = "cardfacePictureBox";
+            this.cardfacePictureBox.Size = new System.Drawing.Size(227, 316);
+            this.cardfacePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cardfacePictureBox.TabIndex = 1;
+            this.cardfacePictureBox.TabStop = false;
+            this.cardfacePictureBox.Visible = false;
+            // 
+            // backButton
+            // 
+            this.backButton.Font = new System.Drawing.Font("新細明體", 18F);
+            this.backButton.Location = new System.Drawing.Point(192, 394);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(180, 81);
+            this.backButton.TabIndex = 2;
+            this.backButton.Text = "顯示背面";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
+            // faceButton
+            // 
+            this.faceButton.Font = new System.Drawing.Font("新細明體", 18F);
+            this.faceButton.Location = new System.Drawing.Point(429, 394);
+            this.faceButton.Name = "faceButton";
+            this.faceButton.Size = new System.Drawing.Size(180, 81);
+            this.faceButton.TabIndex = 3;
+            this.faceButton.Text = "顯示正面";
+            this.faceButton.UseVisualStyleBackColor = true;
+            this.faceButton.Click += new System.EventHandler(this.faceButton_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(858, 498);
+            this.Controls.Add(this.faceButton);
+            this.Controls.Add(this.backButton);
+            this.Controls.Add(this.cardfacePictureBox);
+            this.Controls.Add(this.cardbackPictureBox);
+            this.Name = "Form1";
+            this.Text = "撲克牌展示";
+            ((System.ComponentModel.ISupportInitialize)(this.cardbackPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardfacePictureBox)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox cardbackPictureBox;
+        private System.Windows.Forms.PictureBox cardfacePictureBox;
+        private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Button faceButton;
     }
 }
 
