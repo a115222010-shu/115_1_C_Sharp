@@ -25,13 +25,21 @@
           "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs [\u8A2D\u8A08]",
               "DocumentMoniker": "C:\\Users\\m303\\Desktop\\115_1_C_Sharp\\115_10_29\\Tutorial 4-3\\Loan Qualifier\\Form1.cs",
               "RelativeDocumentMoniker": "Loan Qualifier\\Form1.cs",
-              "ToolTip": "C:\\Users\\m303\\Desktop\\115_1_C_Sharp\\115_10_29\\Tutorial 4-3\\Loan Qualifier\\Form1.cs [\u8A2D\u8A08]*",
-              "RelativeToolTip": "Loan Qualifier\\Form1.cs [\u8A2D\u8A08]*",
+              "ToolTip": "C:\\Users\\m303\\Desktop\\115_1_C_Sharp\\115_10_29\\Tutorial 4-3\\Loan Qualifier\\Form1.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "Loan Qualifier\\Form1.cs [\u8A2D\u8A08]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T05:48:51.401Z",
               "IsPinned": true,
@@ -43,20 +51,12 @@
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\m303\\Desktop\\115_1_C_Sharp\\115_10_29\\Tutorial 4-3\\Loan Qualifier\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Loan Qualifier\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\m303\\Desktop\\115_1_C_Sharp\\115_10_29\\Tutorial 4-3\\Loan Qualifier\\Form1.Designer.cs*",
-              "RelativeToolTip": "Loan Qualifier\\Form1.Designer.cs*",
+              "ToolTip": "C:\\Users\\m303\\Desktop\\115_1_C_Sharp\\115_10_29\\Tutorial 4-3\\Loan Qualifier\\Form1.Designer.cs",
+              "RelativeToolTip": "Loan Qualifier\\Form1.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-29T09:25:51.116Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -64,9 +64,9 @@
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\m303\\Desktop\\115_1_C_Sharp\\115_10_29\\Tutorial 4-3\\Loan Qualifier\\Form1.cs",
               "RelativeDocumentMoniker": "Loan Qualifier\\Form1.cs",
-              "ToolTip": "C:\\Users\\m303\\Desktop\\115_1_C_Sharp\\115_10_29\\Tutorial 4-3\\Loan Qualifier\\Form1.cs*",
-              "RelativeToolTip": "Loan Qualifier\\Form1.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAjAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\m303\\Desktop\\115_1_C_Sharp\\115_10_29\\Tutorial 4-3\\Loan Qualifier\\Form1.cs",
+              "RelativeToolTip": "Loan Qualifier\\Form1.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T05:48:55.409Z",
               "EditorCaption": ""
