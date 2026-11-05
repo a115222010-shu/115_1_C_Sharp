@@ -40,21 +40,21 @@ namespace Test_Score_Average
                     grade = "A";
                    
                  }
-                else if(average >= 80)
+                else if(average >= 80 && average < 90)
                 {
                     grade = "B";
                 }
-                else if (average >= 70)
+                else if (average >= 70 && average < 80)
                 {
                     grade = "C";
                 }
-                else if (average >= 60)
+                else if (average >= 60 && average <70)
                 {
                     grade = "D";
                 }
                 else
                 {
-                    grade = "E";
+                    grade = "F";
                 }
 
                 MessageBox.Show($"成績等級:{grade}");
