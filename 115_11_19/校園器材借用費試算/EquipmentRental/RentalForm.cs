@@ -30,8 +30,18 @@ namespace EquipmentRental
                     // TODO 3：在天數有效的分支內判斷日費及社團優惠。
                     if (days < 3)
                     {
-                        total = (int)(total * 1); 
+                        total = total + 80; 
                         discountMessage = "未達折扣門檻。";
+                    }
+                    else if (days >= 3 && days <= 5)
+                    {
+                        total = total + 70; 
+                        discountMessage = "優惠";
+                    }
+                    else if (days >= 6 && days <= 7)
+                    {
+                        total = total + 60; 
+                        discountMessage = "優惠";
                     }
                     // TODO 4：算出應付金額並更新三個結果欄位。
                     dailyRateLabel.Text = dailyRate.ToString();
