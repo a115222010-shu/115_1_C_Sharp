@@ -13,54 +13,52 @@ namespace EquipmentRental
         private void calculateButton_Click(object sender, EventArgs e)
         {
             dailyRateLabel.Text = "—";
-            totalLabel.Text = "—";
             label3.Text = "—";
-            // TODO 1：新增優惠結果標籤後，每次試算也要將它重設為「—」。
+            totalLabel.Text = "—";
+            feedbackLabel.Text = string.Empty;
 
-            int days;
-            if (int.TryParse(daysTextBox.Text, out days))
+            if (!int.TryParse(daysTextBox.Text, out int days) || days < 1 || days > 7)
             {
-                // TODO 2：用 if-else 檢查天數是否在 1～7 天內。
-                if (days >= 1 && days <= 7)
-                {
-                    // 天數有效，進行計算
-                    int dailyRate = 0;
-                    int total = dailyRate * days;
-                    string discountMessage = "";
-                    // TODO 3：在天數有效的分支內判斷日費及社團優惠。
-                    if (days < 3)
-                    {
-                        total = total + 80; 
-                        discountMessage = "未達折扣門檻。";
-                    }
-                    else if (days >= 3 && days <= 5)
-                    {
-                        total = total + 70; 
-                        discountMessage = "優惠";
-                    }
-                    else if (days >= 6 && days <= 7)
-                    {
-                        total = total + 60; 
-                        discountMessage = "優惠";
-                    }
-                    // TODO 4：算出應付金額並更新三個結果欄位。
-                    dailyRateLabel.Text = dailyRate.ToString();
-                    totalLabel.Text = total.ToString();
-                    feedbackLabel.Text = discountMessage;
-                }
-                else
-                {
-                    feedbackLabel.Text = "請輸入 1 到 7 之間的整數。";
-                }
-                // TODO 3：在天數有效的分支內判斷日費及社團優惠。
-                // TODO 4：算出應付金額並更新三個結果欄位。
-                // 完成 TODO 2～4 後，用你的程式取代下一行。
-                feedbackLabel.Text = "已讀到整數，請完成範圍檢查與試算。";
+                feedbackLabel.Text = "請輸入 1 到 7 之間的整數。";
+                return;
+            }
+
+            int dailyRate;
+            if (days <= 2)
+            {
+                dailyRate = 80;
+            }
+            else if (days <= 5)
+            {
+                dailyRate = 70;
             }
             else
             {
-                feedbackLabel.Text = "請輸入 1 到 7 之間的整數。";
+                dailyRate = 60;
             }
+
+            int discount = 0;
+            string discountMessage;
+
+            if (clubCheckBox.Checked && days >= 3)
+            {
+                discount = 30;
+                discountMessage = "折抵 30 元";
+            }
+            else if (clubCheckBox.Checked)
+            {
+                discountMessage = "未達折抵門檻";
+            }
+            else
+            {
+                discountMessage = "無優惠";
+            }
+
+            int total = days * dailyRate - discount;
+
+            dailyRateLabel.Text = $"{dailyRate} 元";
+            label3.Text = discountMessage;
+            totalLabel.Text = $"{total} 元";
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -70,10 +68,13 @@ namespace EquipmentRental
 
         private void cleanButton_Click(object sender, EventArgs e)
         {
+            daysTextBox.Clear();
+            clubCheckBox.Checked = false;
             dailyRateLabel.Text = "—";
             totalLabel.Text = "—";
             label3.Text = "—";
-
+            feedbackLabel.Text = string.Empty;
+            daysTextBox.Focus();
         }
     }
 }
